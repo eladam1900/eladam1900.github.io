@@ -5,10 +5,81 @@
 <title>MAP672 Portfolio Example</title>
 
 <meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+<link href='https://fonts.googleapis.com/css?family=Droid+Sans|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 <style>
     
-/* CSS style rules go here! */   
+    body{
+        background: #f5f5f5;
+        font-family: "droid Sans", sans-serif;
+        
+    }
+    
+     header { 
+        width: 100%;
+        min-width: 800px;
+        margin: 0 auto;
+        background: steelblue;
+        padding: 15px 0 20px;
+    }
+    
+    h1, h2, h3{
+        font-family: "open sans condensed", sans-serif;
+        font: bold;
+    }
+    
+    h1{
+        font-size: 34px;
+        color: #375671; 
+        width: 80%;
+        margin: 0 auto;
+        color: whitesmoke;
+    }
+    
+    h2{
+        font-size: 20px;
+        color: #375671;
+        width: 80%;
+        margin: 0 auto;
+        color: whitesmoke;
+    }
+    
+    h3{
+        font-size: 28px;
+        color: #003d71
+    }
+    p { 
+        font-size: .9em; 
+        color: #375671; 
+    }
+    ul {
+        list-style-type: none; 
+        font-size: .9em; 
+        color: #375671; 
+        line-height: 1.6em;
+    }
+    a, a:visited {   
+        color: #003d71;
+    }
+    .project {
+    width: 80%;
+    min-width: 800px;
+    height: 100%;
+    margin: 35px auto;
+}
+.project:after{
+    content: "";
+    display: table;
+    clear: both; 
+}
+.project-image {
+    width: 388px;
+    height: 240px;
+    background: white;
+    float: left;
+    margin-right: 20px;
+    border: 2px solid #dddddd;
+}
 
 </style>
 </head>
@@ -16,55 +87,74 @@
 <body>
   <header>
     <h1>Elizabeth Adams</h1>
-    <h2>describe</h2>  
+    <h2>southern Not Southern</h2>  
       
-     <section>
-    <img src="\images\MortalityRates.jpg" alt="Mortality Rates">
-    <h3>map one</h3>
-    <p></p>
-    <p></p>
+ <section class="project">
+    <a href="https://eladams87.cartodb.com/viz/625141e0-96fc-11e5-a761-0ecfd53eb7d3/map" target="_blank"/><img src="Images/MortalityRates.JPG" alt="Mortality Rates"></a>
+    <a href="https://eladams87.cartodb.com/viz/625141e0-96fc-11e5-a761-0ecfd53eb7d3/map" target="_blank"/><h3>Mortality Rates</h3></a>
+    <p>This map conveys the cancer morality rates in the US between the years 2008 and 2012.</p>
+    <p>Rates are calculated oer 100,000 people, and the highest and lowest rated counties are highlighted.</p>
     <ul>
-        <li><a href="" /></li>
-        <li><a href="" /></li>
+        <li>See the map: <a href="https://eladams87.cartodb.com/viz/625141e0-96fc-11e5-a761-0ecfd53eb7d3/map" target="_blank"/>Cancer Morality Rates</a></li>
+        <li>Data Source: <a href="http://www.cancer.gov/" target="_blank"/>The National Cancer Institute</a></li>
     </ul>
 </section>
       
-<section>
-    <img src="\images\FleaMarkets.jpg" alt="Southern Flea Markets">
-    <h3>map two</h3>
+<!--<section  class="project">
+    <img src="Images/FleaMarkets.JPG" alt="Southern FleaMarkets">
+    <h3>Southern FleaMarkets</h3>
     <p></p>
     <p></p>
     <ul>
-        <li><a href="" /></li>
-        <li><a href="" /></li>
+        <li>See the map: <a href="Maps/FleaMarkets_FL_GA_AL.pdf" target="_blank"/>Flea Markets Per Capita</a></li>
+        <li>Data Source: <a href="https://www.census.gov/geo/maps-data/data/tiger.html"target="_blank" />US Census TIGER</a><p> and </p><a href="http://www.poi-factory.com/" target="_blank"/>The 
+    POI Factory</a></li>
+    </ul>
+</section> -->  
+      
+<section  class="project">
+    <a href="Maps/2010PopulationDensity.pdf" target="_blank"/><img src="Images/PopDensity.JPG" alt="US Population Density" class="project-image"></a>
+    <a href="Maps/2010PopulationDensity.pdf" target="_blank"/><h3>US Population Density</h3></a>
+    <p>A simple map of the US population density in 2010</p>
+    <p>Density is detemined by the people per a sqaure mile, per county.</p>
+    <ul>
+        <li>See the map: <a href="Maps/2010PopulationDensity.pdf" target="_blank"/>2010 US Population Density</a></li>
+        <li>Data Source: <a href="https://www.census.gov/geo/maps-data/data/tiger.html" target="_blank"/>2010 US Census Bureau</a></li>
+    </ul>
+</section >  
+
+<sectionclass="project">
+    <a href="https://eladams87.cartodb.com/viz/c194f1fa-a422-11e5-9bfe-0e787de82d45/map" target="_blank"/><img src="Images/Utah.JPG" alt="Utah" class="project-image"></a>
+    <a href="https://eladams87.cartodb.com/viz/c194f1fa-a422-11e5-9bfe-0e787de82d45/map" target="_blank"/><h3>Utah</h3></a>
+    <p>A depiction of national parks and protected areas in the state of Utah, and their coorelating campgrounds</p>
+    <p>More detailed information is availble via feature popups</p>
+    <ul>
+        <li>See the map: <a href="https://eladams87.cartodb.com/viz/c194f1fa-a422-11e5-9bfe-0e787de82d45/map" target="_blank"/>Camp grounds in Utah</a></li>
+        <li>Data Source: <a href="http://www.openstreetmap.org/#map=5/51.500/-0.100" target="_blank"/>Downloaded through Quick OSM</a></li>
     </ul>
 </section>   
       
-<section>
-    <img src="\images\BioSolar.jpg" alt="Biomass and Solar Facilites">
-    <h3>map three</h3>
-    <p></p>
-    <p></p>
+<section  class="project">
+    <a href="Maps/lab8.html" target="_blank"/><img src="Images/BioSolar.JPG" alt="Biomass and Solar Facilites" class="project-image"></a>
+    <a href="Maps/lab8.html" target="_blank"/><h3>Biomass and Solar Facilites</h3></a>
+    <p>A map of available locations of biomass and solar energy plants across the US sorted by MW capacities</p>
+    <p>Each feature highlights as users hover across them, and more speciic plant information is availble via popups.</p>
     <ul>
-        <li><a href="" /></li>
-        <li><a href="" /></li>
+        <li>See the map: <a href="Maps/lab8.html" target="_blank"/>Biomass and Solar Facilites</a></li>
+        <li>Data Source: <a href="http://www.eia.gov/electricity/data/eia923/" target="_blank"/>U.S. Energy Information Administration</a></li>
     </ul>
 </section>  
       
-<section>
-    <img src="\images\HighlightWithPop.jpg" alt="Nuclear, Solar, and Wind Facilites">
-    <h3>map four</h3>
-    <p></p>
-    <p></p>
+<section  class="project">
+    <a href="Maps/lab9.html" target="_blank"/><img src="Images/HighlightWithPop.JPG" alt="Nuclear, Solar, and Wind Facilites" class="project-image"></a>
+    <a href="Maps/lab9.html" target="_blank"/><h3>Nuclear, Solar, and Wind Facilites</h3></a>
+    <p>A map of nuclear, solar and wind energy plants across the US sorted by MW capacities</p>
+    <p>A 500 km radius and coorelating spotlight can be enacted by clicking on the map, and more speciic plant information is availble via popups.</p>
     <ul>
-        <li><a href="" /></li>
-        <li><a href="" /></li>
+        <li>See the map: <a href="Maps/lab9.html" target="_blank"/>Nuclear, Solar, and Wind Facilites</a></li>
+        <li>Data Source: <a href="http://www.eia.gov/electricity/data/eia923/" target="_blank"/>U.S. Energy Information Administration</a></li>
     </ul>
 </section>  
-<!--  //lab 2 or 3
-//lab 8 - https://eladams87.cartodb.com/viz/625141e0-96fc-11e5-a761-0ecfd53eb7d3/public_map
-//lab 9 map
-//lab 8 map-->    
     </header>
 </body>
 </html>
